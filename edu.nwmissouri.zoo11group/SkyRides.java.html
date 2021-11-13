@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SkyRides.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooApp</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo11group</a> &gt; <span class="el_source">SkyRides.java</span></div><h1>SkyRides.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo11group;
+
+import java.util.ArrayList;
+
+/**
+ * This is SkyRides class 
+ * @author Maddelavedu Pravallika(s545254)
+ */
+<span class="fc" id="L13">public class SkyRides extends ZooRides {</span>
+    
+    private double Price;
+    private double Miles;
+
+    @Override
+    public String toString() {
+<span class="fc" id="L20">        return &quot;SkyRides{&quot; + &quot;Price=&quot; + Price + &quot;, Miles=&quot; + Miles + '}';</span>
+    }
+/**
+ * 
+ * @return Price
+ */
+    public double getPrice() {
+<span class="fc" id="L27">        return Price;</span>
+    }
+/**
+ * 
+ * @param Price sets price value
+ */
+    public void setPrice(double Price) {
+<span class="fc" id="L34">        this.Price = Price;</span>
+<span class="fc" id="L35">    }</span>
+/**
+ * 
+ * @return Miles
+ */
+    public double getMiles() {
+<span class="fc" id="L41">        return Miles;</span>
+    }
+/**
+ * 
+ * @param Miles sets Miles value
+ */
+    public void setMiles(double Miles) {
+<span class="fc" id="L48">        this.Miles = Miles;</span>
+<span class="fc" id="L49">    }</span>
+/**
+ * 
+ * @return myGroup value
+ */
+    public static ArrayList&lt;SkyRides&gt; getMyGroup() {
+<span class="fc" id="L55">        return myGroup;</span>
+    }
+
+    public static void setMyGroup(ArrayList&lt;SkyRides&gt; myGroup) {
+<span class="fc" id="L59">        SkyRides.myGroup = myGroup;</span>
+<span class="fc" id="L60">    }</span>
+    private static ArrayList&lt;SkyRides&gt; myGroup;
+     /**
+     * this is ticketprice method displays Price
+     */
+    @Override
+    public void ticketprice(){
+<span class="fc" id="L67">       System.out.println(&quot;The ticket price is $10&quot;); </span>
+<span class="fc" id="L68">}</span>
+
+    /**
+     * this is run method
+     */
+   
+    
+   public static void run() {
+<span class="fc" id="L76">        System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);                      </span>
+<span class="fc" id="L77">        System.out.println(&quot;Hey look do you wanna join sky rides&quot;);                         </span>
+//        for (SkyRides skyrides : myGroup) {                                   
+//            skyrides.noofseats();
+//            skyrides.skyrides();                                  
+//        }
+
+<span class="fc" id="L83">        System.out.println(&quot;The sky rides have many games look at it&quot;);              </span>
+<span class="fc" id="L84">        System.out.println(&quot;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;);                               </span>
+<span class="fc" id="L85">    }</span>
+   /**
+    * this is noofseats method displays noofseats
+    */
+    @Override
+    public void noofseats(){
+<span class="fc" id="L91">         System.out.println(&quot;The number of seats is one&quot;);</span>
+<span class="fc" id="L92">    }</span>
+    /**
+     * this is skyrides method
+     */
+    public void skyrides(){
+<span class="fc" id="L97">        System.out.println(&quot;skyride&quot;);</span>
+<span class="fc" id="L98">    }</span>
+    /**
+     * this is compartment method
+     */
+    public double compartment(){
+<span class="fc" id="L103">        System.out.println(&quot;compartment number alloted&quot;);</span>
+        
+<span class="fc" id="L105">        return 0.0;</span>
+    
+    }
+    /**
+     * this is timeLimit method
+     */
+    public void timeLimit(){
+<span class="fc" id="L112">        System.out.println(&quot;time limit for ride will be&quot;);</span>
+        
+<span class="fc" id="L114">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

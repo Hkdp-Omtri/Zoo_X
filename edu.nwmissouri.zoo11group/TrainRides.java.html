@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TrainRides.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooApp</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo11group</a> &gt; <span class="el_source">TrainRides.java</span></div><h1>TrainRides.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo11group;
+
+/**
+ * This is TrainRides class which defines the rides available in rides
+ * @author S545407
+ */
+<span class="fc" id="L11">public class TrainRides extends ZooRides {</span>
+
+<span class="fc" id="L13">    private String reservedNo = &quot;&quot;;</span>
+<span class="fc" id="L14">    private double speed = 0.0;</span>
+<span class="fc" id="L15">    private double time = 0.0;</span>
+
+    /**
+     *
+     * @return string of all the declared variables
+     */
+    @Override
+    public String toString() {
+<span class="fc" id="L23">        return &quot;TrainRides{&quot; + &quot;reservedNo=&quot; + reservedNo + &quot;, speed=&quot; + speed + &quot;, time=&quot; + time + &quot;, distance=&quot; + distance + '}';</span>
+    }
+
+    /**
+     *
+     * @return reservedNo it will gives you the reserved number
+     */
+    public String getReservedNo() {
+<span class="fc" id="L31">        return reservedNo;</span>
+    }
+
+    /**
+     *
+     * @param reservedNo seats reservedNo will be
+     */
+    public void setReservedNo(String reservedNo) {
+<span class="fc" id="L39">        this.reservedNo = reservedNo;</span>
+<span class="fc" id="L40">    }</span>
+
+    /**
+     *
+     * @return speed value
+     */
+    public double getSpeed() {
+<span class="fc" id="L47">        return speed;</span>
+    }
+
+    /**
+     *
+     * @param speed sets speed value
+     */
+    public void setSpeed(double speed) {
+<span class="fc" id="L55">        this.speed = speed;</span>
+<span class="fc" id="L56">    }</span>
+
+    /**
+     *
+     * @return time value
+     */
+    public double getTime() {
+<span class="fc" id="L63">        return time;</span>
+    }
+
+    /**
+     *
+     * @param time sets the time value
+     */
+    public void setTime(double time) {
+<span class="fc" id="L71">        this.time = time;</span>
+<span class="fc" id="L72">    }</span>
+
+    /**
+     *
+     * @return distance value
+     */
+    public double getDistance() {
+<span class="fc" id="L79">        return distance;</span>
+    }
+
+    /**
+     *
+     * @param distance sets the distance value
+     */
+    public void setDistance(double distance) {
+<span class="fc" id="L87">        this.distance = distance;</span>
+<span class="fc" id="L88">    }</span>
+    private double distance;
+
+    /**
+     *
+     */
+    @Override
+    public void ticketprice() {
+
+<span class="fc" id="L97">    }</span>
+
+    /**
+     * it will defines the no of seats
+     */
+    @Override
+    public void noofseats() {
+<span class="fc" id="L104">        System.out.println(&quot;No.Of Seats Alloted &quot;);</span>
+<span class="fc" id="L105">    }</span>
+
+    /**
+     * it will define the train rides
+     */
+    public static void trainRides() {
+
+<span class="fc" id="L112">    }</span>
+
+    /**
+     *
+     * @return String value of seat number
+     */
+    public static String seatNumber() {
+<span class="fc" id="L119">        System.out.println(&quot;The alloted seat number for your ride&quot;);</span>
+<span class="fc" id="L120">        return &quot;FAXeZBc&quot;;</span>
+    }
+
+    /**
+     *
+     * @return double value of the speed
+     */
+    public static double speedCalculation() {
+<span class="fc" id="L128">        System.out.println(&quot;Calculating the speed of the train&quot;);</span>
+<span class="fc" id="L129">        return 0.0;</span>
+    }
+
+    /**
+     * it will execute the run method
+     */
+    public static void run() {
+<span class="fc" id="L136">        System.out.println(&quot;======= THIS IS TRAIN RIDES ==========&quot;);</span>
+<span class="fc" id="L137">        System.out.println(&quot;I Am Here To Present About Available Train Rides &quot;);</span>
+<span class="fc" id="L138">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ZooApp.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooApp</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo11group</a> &gt; <span class="el_source">ZooApp.java</span></div><h1>ZooApp.java</h1><pre class="source lang-java linenums">package edu.nwmissouri.zoo11group;
+
+import java.util.Scanner;
+
+/**
+ * ZooApp is a Zoo simulation created by 542 Section 05.
+ *
+ * @author Homakesavadurgaprasad Omtri (S544929)
+ */
+<span class="nc" id="L10">public class ZooApp {</span>
+
+    // Specify welcome message
+    private static final String GREETING_MESSAGE = &quot;Welcome to our 542 Zoo!&quot;;
+
+    // Specify how to exit message
+    private static final String ESCAPE_MESSAGE = &quot;Hit Q to exit.&quot;;
+
+    // Specify goodbye string
+    private static final String GOODBYE_MESSAGE = &quot;Thank you for visiting our zoo!&quot;;
+
+    // specify number of  animal types available 
+    private static final int NUMBER_ANIMAL_TYPES = 60;
+
+    /**
+     * This main() method is the entry point for our application.
+     *
+     * @param args - inputs provided to the program (none required)
+     */
+    public static void main(String[] args) {
+
+        // output welcome
+<span class="nc" id="L32">        System.out.println(GREETING_MESSAGE);</span>
+
+        // output how to escape 
+<span class="nc" id="L35">        System.out.println(ESCAPE_MESSAGE);</span>
+
+        // construct Scanner and begin interaction
+<span class="nc" id="L38">        var scanner = new Scanner(System.in);</span>
+
+        // Prompt for topic: ask if they want to see animals
+<span class="nc" id="L41">        System.out.println(&quot;Do you want to see animals (y/n)?&quot;);</span>
+<span class="nc" id="L42">        var animalInterestInput = scanner.next();</span>
+
+        // if yes, show list
+<span class="nc bnc" id="L45" title="All 2 branches missed.">        if (animalInterestInput.toUpperCase().startsWith(&quot;Y&quot;)) {</span>
+
+            // declare an int for the animal type number input
+            int typeNumberInput;
+
+            // declare a boolean for isValid
+            boolean isValid;
+
+            // do the list prompt for the first time, loop back while valid
+            do {
+                // Prompt for type: ask if they want to see animals
+<span class="nc" id="L56">                System.out.println();</span>
+<span class="nc" id="L57">                System.out.println(&quot;What animals would you like to see?&quot;);</span>
+<span class="nc" id="L58">                System.out.println(&quot;Enter a number to choose, 0 to exit.&quot;);</span>
+
+                /* System.out.print(&quot; 1.Aardvark            &quot;);
+                System.out.print(&quot; 2.Abyssinian          &quot;);
+                System.out.print(&quot; 3.Arvicolinae         &quot;);
+                System.out.println(&quot; 4.Asp                 &quot;);
+                System.out.print(&quot; 5.Bearcat             &quot;);
+                System.out.print(&quot; 6.BengalTiger         &quot;);
+                System.out.print(&quot; 7.BlackJaguar         &quot;);
+                System.out.println(&quot; 8.BlackPanther        &quot;);
+                System.out.print(&quot; 9.Brachiosaurus       &quot;);
+                System.out.print(&quot;10.Buffalo             &quot;);
+                System.out.print(&quot;11.Cat                 &quot;);
+                System.out.println(&quot;12.Cheetah             &quot;);
+                System.out.print(&quot;13.CongoLion           &quot;);
+                System.out.print(&quot;14.Cow                 &quot;);
+                System.out.print(&quot;15.Crocodile           &quot;);
+                System.out.println(&quot;16.Dalmatian           &quot;);
+                System.out.print(&quot;17.Deer                &quot;);
+                System.out.print(&quot;18.Dinosaur            &quot;);
+                System.out.print(&quot;19.Duck                &quot;);
+                System.out.println(&quot;20.ElephantBird        &quot;); */
+<span class="nc" id="L80">                System.out.print(&quot;1.Elephant            &quot;);</span>
+<span class="nc" id="L81">                System.out.print(&quot;2.Emu                 &quot;);</span>
+                /* System.out.print(&quot;23.FerociousTiger      &quot;);
+                System.out.println(&quot;24.Floppy              &quot;);
+                System.out.print(&quot;25.Frog                &quot;);
+                System.out.print(&quot;26.Gerenuk             &quot;);
+                System.out.print(&quot;27.Giraffe             &quot;);
+                System.out.println(&quot;28.Glyptodon           &quot;);
+                System.out.print(&quot;29.Goat                &quot;);
+                System.out.print(&quot;30.Griffin             &quot;);
+                System.out.print(&quot;31.HarpSeal            &quot;);
+                System.out.println(&quot;32.Hippopotamus        &quot;);
+                System.out.print(&quot;33.Kangaroo            &quot;);
+                System.out.print(&quot;34.Kangaroov           &quot;);
+                System.out.print(&quot;35.Koala               &quot;);
+                System.out.println(&quot;36.Liger               &quot;);
+                System.out.print(&quot;37.Lioness             &quot;);
+                System.out.print(&quot;38.Lion                &quot;);
+                System.out.print(&quot;39.MightyLion          &quot;);
+                System.out.println(&quot;40.MuleDeer            &quot;);
+                System.out.print(&quot;41.Okapi               &quot;);
+                System.out.print(&quot;42.Panda               &quot;); */
+<span class="nc" id="L102">                System.out.print(&quot;3.Panthera            &quot;);</span>
+<span class="nc" id="L103">                System.out.println(&quot;4.PolarBear           &quot;);</span>
+<span class="nc" id="L104">                System.out.print(&quot;5.ProngHorn           &quot;);</span>
+                /* System.out.print(&quot;46.Puma                &quot;);
+                System.out.print(&quot;47.Rabbit              &quot;);
+                System.out.println(&quot;48.RelayHorse          &quot;);
+                System.out.print(&quot;49.RoaringLion         &quot;);
+                System.out.print(&quot;50.Shoebill            &quot;);
+                System.out.print(&quot;51.SiberianTiger       &quot;);
+                System.out.println(&quot;52.Squirrel            &quot;);
+                System.out.print(&quot;53.Stag                &quot;);
+                System.out.print(&quot;54.StringRay           &quot;);
+                System.out.print(&quot;55.SunBear             &quot;); */
+<span class="nc" id="L115">                System.out.println(&quot;6.TauntingTiger       &quot;);</span>
+                /*  System.out.print(&quot;57.Unicorn             &quot;);
+                System.out.print(&quot;58.Walrus              &quot;);
+                System.out.print(&quot;59.Xraytetra           &quot;);
+                System.out.println(&quot;60.YukonMoose          &quot;); */
+<span class="nc" id="L120">                System.out.println(&quot;7.SkyRides       &quot;);</span>
+<span class="nc" id="L121">                System.out.println(&quot;8.BungeJumpAdventure       &quot;);</span>
+<span class="nc" id="L122">                System.out.println(&quot;9.CarRides       &quot;);</span>
+<span class="nc" id="L123">                System.out.println(&quot;10.CycleRides       &quot;);</span>
+<span class="nc" id="L124">                System.out.println(&quot;11.FerrisWheelAdventure       &quot;);</span>
+<span class="nc" id="L125">                System.out.println(&quot;12.LogRideAdventure       &quot;);</span>
+<span class="nc" id="L126">                System.out.println(&quot;13.RollerCoasterAdventure       &quot;);</span>
+<span class="nc" id="L127">                System.out.println(&quot;14.RopeRidesAdventure       &quot;);</span>
+<span class="nc" id="L128">                System.out.println(&quot;15.ShuttleRides       &quot;);</span>
+<span class="nc" id="L129">                System.out.println(&quot;16.TrainRides       &quot;);</span>
+<span class="nc" id="L130">                System.out.println(&quot;17.WaterRides       &quot;);</span>
+<span class="nc" id="L131">                System.out.println(&quot;18.ShuttleRides       &quot;);</span>
+                try {
+<span class="nc" id="L133">                    typeNumberInput = scanner.nextInt();</span>
+<span class="nc" id="L134">                } catch (Exception ex) {</span>
+<span class="nc" id="L135">                    typeNumberInput = 0;</span>
+<span class="nc" id="L136">                }</span>
+
+                // set isValid if &gt;= 1 and &lt;= number of animal types
+<span class="nc bnc" id="L139" title="All 4 branches missed.">                isValid = typeNumberInput &gt;= 1 &amp;&amp; typeNumberInput &lt;= NUMBER_ANIMAL_TYPES;</span>
+
+                // switch by animal type - autogenerate with ZooBuildSwitch.java
+<span class="nc bnc" id="L142" title="All 19 branches missed.">                switch (typeNumberInput) {</span>
+
+                    case 1 -&gt; {
+<span class="nc" id="L145">                        ElephantGroup.create();</span>
+<span class="nc" id="L146">                        ElephantGroup.run();</span>
+<span class="nc" id="L147">                    }</span>
+                    case 2 -&gt; {
+<span class="nc" id="L149">                        EmuGroup.create();</span>
+<span class="nc" id="L150">                        EmuGroup.run();</span>
+<span class="nc" id="L151">                    }</span>
+
+                    case 3 -&gt; {
+<span class="nc" id="L154">                        PantheraGroup.create();</span>
+<span class="nc" id="L155">                        PantheraGroup.run();</span>
+<span class="nc" id="L156">                    }</span>
+                    case 4 -&gt; {
+<span class="nc" id="L158">                        PolarBearGroup.create();</span>
+<span class="nc" id="L159">                        PolarBearGroup.run();</span>
+<span class="nc" id="L160">                    }</span>
+                    case 5 -&gt; {
+<span class="nc" id="L162">                        ProngHornGroup.create();</span>
+<span class="nc" id="L163">                        ProngHornGroup.run();</span>
+<span class="nc" id="L164">                    }</span>
+
+                    case 6 -&gt; {
+<span class="nc" id="L167">                        TauntingTigerGroup.create();</span>
+<span class="nc" id="L168">                        TauntingTigerGroup.run();</span>
+<span class="nc" id="L169">                    }</span>
+                    case 7 -&gt; {
+<span class="nc" id="L171">                        SkyRides.run();</span>
+<span class="nc" id="L172">                    }</span>
+                    case 8 -&gt; {
+<span class="nc" id="L174">                        BungeJumpAdventure.run();</span>
+<span class="nc" id="L175">                    }</span>
+                    case 9 -&gt; {
+<span class="nc" id="L177">                        CarRides.run();</span>
+<span class="nc" id="L178">                    }</span>
+                    case 10 -&gt; {
+<span class="nc" id="L180">                        CycleRides.run();</span>
+<span class="nc" id="L181">                    }</span>
+                    case 11 -&gt; {
+<span class="nc" id="L183">                        FerrisWheelAdventure.run();</span>
+<span class="nc" id="L184">                    }</span>
+                    case 12 -&gt; {
+<span class="nc" id="L186">                        LogRideAdventure.run();</span>
+<span class="nc" id="L187">                    }</span>
+                    case 13 -&gt; {
+<span class="nc" id="L189">                        RollerCoasterAdventure.run();</span>
+<span class="nc" id="L190">                    }</span>
+                    case 14 -&gt; {
+<span class="nc" id="L192">                        RopeRidesAdventure.run();</span>
+<span class="nc" id="L193">                    }</span>
+                    case 15 -&gt; {
+<span class="nc" id="L195">                        ShuttleRides.run();</span>
+<span class="nc" id="L196">                    }</span>
+                    case 16 -&gt; {
+<span class="nc" id="L198">                        TrainRides.run();</span>
+<span class="nc" id="L199">                        TrainRides.speedCalculation();</span>
+<span class="nc" id="L200">                        TrainRides.seatNumber();</span>
+<span class="nc" id="L201">                        TrainRides.trainRides();</span>
+<span class="nc" id="L202">                    }</span>
+                    case 17 -&gt; {
+<span class="nc" id="L204">                        WaterRides.run();</span>
+<span class="nc" id="L205">                    }</span>
+                    case 18 -&gt; {
+<span class="nc" id="L207">                        ShuttleRides.run();</span>
+<span class="nc" id="L208">                    }</span>
+                    default -&gt; {
+                    }
+
+                }
+
+                // while the input is valid, we loop back
+<span class="nc bnc" id="L215" title="All 2 branches missed.">            } while (isValid);</span>
+
+            // close the if loop
+        } // Prompt for adventures: ask if they want to try an adventure
+        //        System.out.println(&quot;Do you want to go on an adventure (y/n)?&quot;);
+        //        var adventureInterestInput = scanner.next();
+        //        if (adventureInterestInput.toUpperCase().startsWith(&quot;Y&quot;)) {
+        //            System.out.println(&quot;Sorry - this option is not yet available.&quot;);
+        //        }
+        // output goodbye
+<span class="nc" id="L225">        System.out.println(GOODBYE_MESSAGE);</span>
+
+<span class="nc" id="L227">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

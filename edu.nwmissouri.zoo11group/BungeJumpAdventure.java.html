@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BungeJumpAdventure.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooApp</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo11group</a> &gt; <span class="el_source">BungeJumpAdventure.java</span></div><h1>BungeJumpAdventure.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo11group;
+
+/**
+ * This is a BungeJumpAdventure class 
+ * @author Sarath Arrepu
+ */
+<span class="fc" id="L11">public class BungeJumpAdventure extends ZooAdventure {</span>
+    
+    private boolean signedsafetywavier;
+
+
+    @Override
+    public String toString() {
+<span class="nc" id="L18">        return &quot;BungeJumpAdventure{&quot; + &quot;signedsafetywavier=&quot; + signedsafetywavier + &quot;, totcustomer=&quot; + totcustomer + '}';</span>
+    }
+/**
+ * 
+ * @return isSignedsafetywavier value
+ */
+    public boolean isSignedsafetywavier() {
+<span class="nc" id="L25">        return signedsafetywavier;</span>
+    }
+/**
+ * 
+ * @param signedsafetywavier sets the value of setSignedsafetywavier
+ */
+    public void setSignedsafetywavier(boolean signedsafetywavier) {
+<span class="nc" id="L32">        this.signedsafetywavier = signedsafetywavier;</span>
+<span class="nc" id="L33">    }</span>
+/**
+ * @return customer value of customer
+ */
+    public int getTotcustomer() {
+<span class="nc" id="L38">        return totcustomer;</span>
+    }
+    /**
+     * 
+     * @param totcustomer to set the customer
+     */
+
+    public void setTotcustomer(int totcustomer) {
+<span class="nc" id="L46">        this.totcustomer = totcustomer;</span>
+<span class="nc" id="L47">    }</span>
+    private int totcustomer;
+    /*
+    This is ageLimit method displays age
+    */
+    @Override
+    public void ageLimit() {
+<span class="fc" id="L54">        System.out.println(&quot;the age limit is 20+ years&quot;);</span>
+<span class="fc" id="L55">    }</span>
+    /*
+    This is idProof method and it asks for idProof
+    */
+    @Override
+    public void idProof() {
+<span class="fc" id="L61">        System.out.println(&quot;We need valid passport&quot;);</span>
+<span class="fc" id="L62">    }</span>
+    /*
+    This is safetyMeasures method
+    */
+    @Override
+    public void safetyMeasures() {
+<span class="fc" id="L68">        System.out.println(&quot;For BungeJump you have to sign death wavier&quot;);</span>
+<span class="fc" id="L69">    }</span>
+    /*
+    This is lengthofjump method it has length of the jump
+    */
+    public void lengthofjump() {
+<span class="fc" id="L74">        System.out.println(&quot;This a 100 meter jump&quot;);</span>
+<span class="fc" id="L75">    }</span>
+ /**
+  * 
+  * @return duration value of time
+  */
+    public double duration() {
+<span class="fc" id="L81">        return 10.0;</span>
+    }
+    /*
+    This is run method displays 
+    */
+    public static void run() {
+<span class="nc" id="L87">        System.out.println(&quot;********************************&quot;);</span>
+<span class="nc" id="L88">        System.out.println(&quot;Bunge Jump Adventure&quot;);</span>
+<span class="nc" id="L89">    }</span>
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

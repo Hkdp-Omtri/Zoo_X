@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RollerCoasterAdventure.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooApp</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo11group</a> &gt; <span class="el_source">RollerCoasterAdventure.java</span></div><h1>RollerCoasterAdventure.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo11group;
+
+/**
+ *This is RollerCoasterAdventure class 
+ * @author Maddelavedu Pravallika(s545254)
+ */
+<span class="fc" id="L11">public class RollerCoasterAdventure extends ZooAdventure {</span>
+    private String nameOfThePerson;
+    private boolean isCondition;
+
+    @Override
+    public String toString() {
+<span class="fc" id="L17">        return &quot;RollerCoasterAdventure{&quot; + &quot;nameOfThePerson=&quot; + nameOfThePerson + &quot;, isCondition=&quot; + isCondition + '}';</span>
+    }
+/**
+ * 
+ * @return nameOfThePerson value
+ */
+    public String getNameOfThePerson() {
+<span class="fc" id="L24">        return nameOfThePerson=&quot;&quot;;</span>
+    }
+
+    /**
+     * 
+     * @param nameOfThePerson sets the nameOfThePerson value
+     */
+    public void setNameOfThePerson(String nameOfThePerson) {
+<span class="fc" id="L32">        this.nameOfThePerson = nameOfThePerson;</span>
+<span class="fc" id="L33">    }</span>
+/**
+ * 
+ * @return isCondition value
+ */
+    public boolean isIsCondition() {
+<span class="fc" id="L39">        return isCondition;</span>
+    }
+/**
+ * 
+ * @param isCondition sets isCondition
+ */
+    public void setIsCondition(boolean isCondition) {
+<span class="fc" id="L46">        this.isCondition = isCondition;</span>
+<span class="fc" id="L47">    }</span>
+     /**
+     * This is ageLimit method displays Age
+     */
+    @Override
+    public void ageLimit(){
+<span class="fc" id="L53">        System.out.println(&quot;AgeLimit is 18+ years&quot;);</span>
+<span class="fc" id="L54">    }</span>
+    /**
+     *  This is the idProof technique, which requires idProof.
+     */
+    @Override
+    public void idProof(){
+<span class="fc" id="L60">        System.out.println(&quot;we need aadhar card&quot;);</span>
+<span class="fc" id="L61">    }</span>
+
+    /**
+     * This is safetyMeasures method
+     */
+    @Override
+    public void safetyMeasures(){
+<span class="fc" id="L68">       System.out.println(&quot;RollerCoater you have to sign death wavier&quot;); </span>
+<span class="fc" id="L69">    }</span>
+   /**
+    * this is condition method to check the rollercoaster
+    */
+    public boolean condition(){
+<span class="fc" id="L74">        System.out.println(&quot;checking the condition is true or false if false mention danger&quot;);</span>
+        
+<span class="fc" id="L76">        return false;</span>
+    }
+    /**
+     * this is color method displays color of the ride
+     */
+    public void color(){
+<span class="fc" id="L82">        System.out.println(&quot;Color of the roller coster will mentioned as per changes&quot;);</span>
+<span class="fc" id="L83">         }</span>
+    /**
+     * this is run method
+     */
+    public static void run() {
+<span class="fc" id="L88">        System.out.println(&quot;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&quot;);                      </span>
+<span class="fc" id="L89">        System.out.println(&quot;This is the RollerCoaster Adventure!&quot;); }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
